@@ -1,172 +1,129 @@
 # 王慧增｜天线与射频项目作品集
 
-上海大学电子信息硕士，2027届毕业生。
+上海大学电子信息硕士，2027届。面向天线工程师、射频工程师、RF前端工程师和微波工程师岗位。
 
-主要研究与项目方向包括天线设计、射频前端、微波无线输能以及车载多频带天线。
+## GitHub Pages地址
 
-**求职方向：天线工程师、射频工程师、RF前端工程师、微波工程师**
+预期发布地址（完成下方设置且部署成功后生效）：
 
----
+https://aczeng.github.io/antenna-rf-portfolio/
 
-## 专业技能
+简历中可将“项目作品集”链接到此地址。
 
-- **电磁仿真：** HFSS、CST、参数扫描、Optimetrics、S参数、表面电流、增益、效率及远场方向图分析
-- **射频电路：** ADS、阻抗匹配、稳定性分析、S参数、电路与电磁联合仿真、谐波平衡
-- **测试与调试：** VNA、频谱仪、信号发生器、示波器、微波暗室
-- **工程实践：** PCB焊接、射频接头制作、设备安装调试、天线性能测试与数据分析、工程集成问题处理
-- **软件工具：** Origin、MATLAB、Altium Designer、Cadence、AutoCAD
+## 项目结构
 
----
+```text
+antenna-rf-portfolio/
+├── index.html
+├── 404.html
+├── projects/
+│   ├── active-antenna.html
+│   ├── wifi-antenna.html
+│   ├── microwave-wpt.html
+│   └── vehicle-antenna.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       └── README.md
+├── README.md
+└── .nojekyll
+```
 
-# 项目经历
+`index.html` 和 `.nojekyll` 必须直接位于 GitHub 仓库根目录。不要再添加中文目录或同名外层目录。上传解压后文件夹**里面的内容**，不要上传 ZIP 文件本身。
 
-## 01 欧姆区FET超宽带有源接收天线及稳定性优化
+这是纯静态 HTML 与 CSS 网站，没有运行时 JavaScript、npm、Node.js、React、数据库或服务器依赖。双击首页即可本地浏览；GitHub Pages负责公开托管。
 
-**时间：2026.06 – 2026.08**
+## 如何增加图片
 
-设计圆盘单极子与欧姆区 NE3510M04 FET 一体化有源接收前端，通过高输入阻抗实现宽带电压感知与阻抗转换。
+1. 将真实图片上传到 `assets/images/`，建议使用下表中的英文小写文件名。
+2. 打开对应 `projects/*.html`，搜索“此处插入”或图位标识。
+3. 每个占位框前已有注释中的 `<img>` 示例。将整个 `<div class="media-stage">…</div>` 替换为该示例，保留外层 `<figure>` 和下方 `<figcaption>`。确认图片已上传，再启用图片引用。
+4. 按图片实际内容修改 `alt` 和一句话图注；提交后检查桌面和手机效果。
 
-针对寄生反馈引起的高频不稳定问题，引入 **25 Ω + 1 pF 频率选择性栅极阻尼网络**，并完成 HFSS 与 ADS 联合仿真、样机加工及测试。
+项目详情页示例：
 
-### 关键结果
+```html
+<figure class="media" id="wifi-structure">
+  <img class="project-image"
+       src="../assets/images/wifi-antenna-structure.png"
+       alt="金属侧板屏蔽环境下的共体双馈天线结构"
+       loading="lazy" decoding="async">
+  <figcaption>共辐射体双馈结构及隔离枝节。</figcaption>
+</figure>
+```
 
-- **2 MHz–3 GHz：μ、μ′ > 1**
-- 输出匹配覆盖 **2 MHz–2.3 GHz**
-- 工作偏置：**2.55 V**
-- 功耗约：**55 mW**
-- 接收增益与方向图实测范围：**0.4–2.2 GHz**
-- 最大接收增益：**9.27 dBi**
+首页若增加图片，使用 `assets/images/文件名.png`；项目页使用 `../assets/images/文件名.png`。文件名大小写必须与引用完全一致。不要填写电脑磁盘路径、`file://` 或以 `/assets/` 开头的路径。
 
-### 主要工作
+当前保留15个图位：FET 7个、WiFi 3个、无线输能2个、透明车窗3个。μ与μ′、样机实物、代表频点电流和现场照片可使用组合图。无线输能系统框图已有HTML文字结构，无需额外上传图片；若以后需要替换，建议命名 `wpt-system.png`。
 
-- HFSS天线建模与电磁分析
-- ADS射频前端及稳定性分析
-- HFSS与ADS联合仿真
-- 样机加工与器件焊接
-- VNA测试及微波暗室测试
+| 图片文件名 | 对应HTML图位标识 |
+| --- | --- |
+| `active-antenna-structure.png` | fet-structure |
+| `active-antenna-circuit.png` | fet-circuit |
+| `active-antenna-stability.png` | fet-stability |
+| `active-antenna-s21.png` | fet-s21 |
+| `active-antenna-sweep.png` | fet-sweep |
+| `active-antenna-prototype.jpg` | fet-prototype |
+| `active-antenna-measurement.jpg` | fet-chamber |
+| `wifi-antenna-structure.png` | wifi-structure |
+| `wifi-antenna-sparams.png` | wifi-sparams |
+| `wifi-antenna-current.png` | wifi-current |
+| `wpt-site-liuzhou.jpg` | wpt-field |
+| `wpt-test.png` | wpt-data |
+| `vehicle-antenna-structure.png` | window-structure |
+| `vehicle-antenna-sparams.png` | window-sparams |
+| `vehicle-antenna-current.png` | window-current |
 
-**成果：第一作者论文投稿 IEEE Antennas and Wireless Propagation Letters（AWPL），目前在投。**
+仅上传适合公开展示的结构截图、曲线和测试照片。不要上传原始HFSS、ADS工程、Gerber、未公开论文全文或客户内部资料。现场照片如有客户名称、设备编号等敏感内容，先处理后上传。不要使用无关网络图片或虚构仿真曲线。
 
-> 后续补充：结构图、稳定性曲线、S参数、样机及测试照片。
+## 如何更新网页
 
----
+```text
+修改文件
+→ Commit changes
+→ GitHub Pages自动重新部署
+```
 
-## 02 WiFi多频段小型化共体双馈高隔离天线
+首页内容在 `index.html`；项目内容在对应的 `projects/*.html`；统一样式在 `assets/css/style.css`。页面顶部使用同一导航结构，修改导航文案时同步修改首页和四个项目页。
 
-**时间：2025.09 – 2026.04**
+## GitHub Pages设置
 
-面向金属侧板屏蔽的复杂安装环境，设计共辐射体双馈双端口天线，实现 WiFi 多频段宽带覆盖。
+在仓库 `aczeng/antenna-rf-portfolio` 中打开：
 
-通过隔离枝节调控表面电流路径，降低双端口之间的互耦。
+```text
+Settings
+→ Pages
+→ Build and deployment
+→ Source: Deploy from a branch
+→ Branch: main
+→ Folder: / (root)
+→ Save
+```
 
-### 关键结果
+根目录保留 `.nojekyll`。等待仓库 Actions 中 Pages部署成功，再打开网站。
 
-- 工作频段：**2.4–2.5 GHz**
-- 工作频段：**5.05–7.125 GHz**
-- 双端口 **VSWR < 2**
-- 工作频段内 **隔离度 > 20 dB**
-- 辐射效率 **> 80%**
-- 最大增益：**6.5 dBi**
+[GitHub官方发布来源说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-### 主要工作
+## 从旧中文子目录迁移
 
-- HFSS天线结构设计
-- 参数扫描及Optimetrics优化
-- 双端口互耦分析
-- 表面电流分析
-- 增益、效率及远场方向图分析
+先保留旧仓库提交记录；将本目录内的 `index.html`、`404.html`、`projects`、`assets`、`README.md` 和 `.nojekyll` 放到仓库根目录，随后删除旧中文目录并提交。若线上有后来添加的真实图片，先将它们保留到 `assets/images/` 并修正引用。不要用本地文件覆盖尚未核对的真实图片。
 
-> 后续补充：天线结构图、S参数及代表频点表面电流图。
+此交付包不包含旧中文外层目录，也不含本机绝对路径。旧中文子目录链接会失效，应将简历链接更新为上述仓库根地址。
 
----
+## 路径与404说明
 
-## 03 10 m级微波无线输能系统搭建与现场测试
+- 首页项目入口为 `projects/active-antenna.html` 等相对路径。
+- 项目页品牌链接为 `../index.html`，“返回项目首页”链接为 `../index.html#projects`。
+- 首页使用 `assets/css/style.css`，项目页使用 `../assets/css/style.css`。
+- 首页导航锚点为 `#projects`、`#skills`、`#contact`。
+- `404.html` 使用项目仓库路径 `/antenna-rf-portfolio/index.html` 返回首页，确保从任意深度的无效网址也能回到正确站点。它是刻意保留的站点路径，不是本地绝对路径。仓库改名或改用自定义域名时，需要相应更新404链接和本文网址。
 
-**时间：2025.09 – 2026.03**
+## 发布后检查
 
-参与远距离微波无线输能系统搭建，通过发射天线与接收天线实现空间能量传输。
-
-### 测试结果
-
-- 传输距离约：**10 m**
-- 系统输入功率：**100 W**
-- 接收端实测功率约：**1.5 W**
-
-### 主要工作
-
-- 发射端与接收端设备连接
-- 发射、接收天线布设
-- 系统链路联调
-- 接收功率测试与数据记录
-- 测试数据整理与分析
-- 赴柳州完成设备安装、系统调试及现场实测
-- 配合处理现场设备集成及天线部署问题
-
-> 注：由于输入功率与接收功率的严格参考面尚未进一步确认，本项目暂不直接以二者计算系统传输效率。
-
-> 后续补充：系统框图、现场安装照片及测试数据。
-
----
-
-## 04 车载透明多端口多频带天线
-
-**时间：2026.04 – 至今**
-
-基于透明导电膜设计车窗集成多端口天线，面向汽车广播接收、蜂窝通信及车联网多制式通信需求。
-
-### 覆盖业务
-
-- AM
-- FM
-- DAB Band III
-- 5G
-- WiFi
-- V2X
-
-### 主要工作
-
-- 多端口透明天线结构设计
-- 多频带阻抗匹配优化
-- 表面电流分析
-- 远场性能分析
-- 多端口互耦分析
-- 高隔离解耦方案研究
-
-**当前进展：** 已完成多频带结构设计及仿真验证，正在进一步开展端口互耦及高隔离解耦优化。
-
-> 后续补充：整体结构图、多端口S参数及代表频点表面电流图。
-
----
-
-# 工程与测试经验
-
-除仿真设计外，具备一定的实际工程测试及现场实施经验：
-
-- VNA校准及S参数测试
-- 天线增益与方向图测试
-- 微波暗室测试
-- PCB焊接与调试
-- 射频接头制作
-- 设备现场安装及系统联调
-- 天线性能测试与数据分析
-- 工程集成问题定位与处理
-- 产品设计文档及测试报告撰写
-
----
-
-# 仓库说明
-
-本仓库用于整理个人天线与射频相关项目经历。
-
-后续将逐步补充：
-
-- 天线结构图
-- HFSS仿真结果
-- ADS仿真结果
-- S参数
-- 表面电流
-- 辐射方向图
-- 样机照片
-- 测试环境照片
-- 现场工程照片
-
+- 首页以及四个项目页均能打开，CSS正常加载。
+- 各项目品牌链接、返回入口和相邻项目链接正确。
+- 在手机宽度检查项目卡片单列、导航换行、指标卡片换行与图片完整显示。
+- 确认真实图片清晰、文件名大小写准确；未提供图片时只显示明确占位框。
+- 打开一个不存在的地址，确认404页面的返回链接有效。
+- 输入100 W与接收约1.5 W是不同参考位置的已提供数据，不推算或标注“效率1.5%”。
