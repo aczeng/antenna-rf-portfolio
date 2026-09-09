@@ -23,9 +23,18 @@
 
 # 项目经历
 
-## 01｜欧姆区FET超宽带有源接收天线及稳定性优化
+### 项目导航
+
+- [01｜欧姆区FET超宽带有源接收天线及稳定性优化](https://aczeng.github.io/antenna-rf-portfolio/项目/有源接收天线.html)
+- [02｜WiFi多频段小型化共体双馈高隔离天线](https://aczeng.github.io/antenna-rf-portfolio/项目/无线网络高隔离天线.html)
+- [03｜10 m级微波无线输能系统搭建与现场测试](https://aczeng.github.io/antenna-rf-portfolio/项目/微波无线输能.html)
+- [04｜车载透明多端口多频带天线](https://aczeng.github.io/antenna-rf-portfolio/项目/车载透明天线.html)
+
+## 01｜[欧姆区FET超宽带有源接收天线及稳定性优化](https://aczeng.github.io/antenna-rf-portfolio/项目/有源接收天线.html)
 
 **项目时间：2026.06–2026.08**
+
+👉 [查看完整项目展示](https://aczeng.github.io/antenna-rf-portfolio/项目/有源接收天线.html)
 
 设计圆盘单极子与欧姆区 NE3510M04 FET 一体化有源接收前端，利用FET高输入阻抗降低电小天线负载效应，实现宽带电压感知与阻抗转换。
 
@@ -48,15 +57,15 @@
 - 接收增益与方向图测试：**0.4–2.2 GHz**
 - 最大接收增益：**9.27 dBi**
 
-**成果：第一作者论文投稿 IEEE Antennas and Wireless Propagation Letters（AWPL），目前在投。**
-
-> 项目图示将陆续补充：天线结构、FET前端、稳定性曲线、S参数、样机及测试照片。
+- 第一作者论文投稿 **IEEE AWPL**，目前在投
 
 ---
 
-## 02｜WiFi多频段小型化共体双馈高隔离天线
+## 02｜[WiFi多频段小型化共体双馈高隔离天线](https://aczeng.github.io/antenna-rf-portfolio/项目/无线网络高隔离天线.html)
 
 **项目时间：2025.09–2026.04**
+
+👉 [查看完整项目展示](https://aczeng.github.io/antenna-rf-portfolio/项目/无线网络高隔离天线.html)
 
 面向金属侧板屏蔽的复杂安装环境，设计共辐射体双馈双端口天线，在有限空间内实现 WiFi 多频段宽带覆盖。
 
@@ -72,7 +81,7 @@
 
 ### 关键结果
 
-以下为仿真结果。
+以下为仿真结果：
 
 - 工作频段：**2.4–2.5 GHz**
 - 工作频段：**5.05–7.125 GHz**
@@ -81,13 +90,13 @@
 - 辐射效率 **> 80%**
 - 最大增益：**6.5 dBi**
 
-> 项目图示将陆续补充：HFSS结构、S参数及代表频点表面电流。
-
 ---
 
-## 03｜10 m级微波无线输能系统搭建与现场测试
+## 03｜[10 m级微波无线输能系统搭建与现场测试](https://aczeng.github.io/antenna-rf-portfolio/项目/微波无线输能.html)
 
 **项目时间：2025.09–2026.03**
+
+👉 [查看完整项目展示](https://aczeng.github.io/antenna-rf-portfolio/项目/微波无线输能.html)
 
 参与远距离微波无线输能系统搭建，通过发射天线与接收天线实现空间无线能量传输，并完成实验室联调及现场工程验证。
 
@@ -108,13 +117,13 @@
 
 > 注：由于输入功率与接收功率位于不同系统位置，本项目不直接将二者换算为系统传输效率。
 
-> 项目图示将陆续补充：系统链路、现场安装照片及测试结果。
-
 ---
 
-## 04｜车载透明多端口多频带天线
+## 04｜[车载透明多端口多频带天线](https://aczeng.github.io/antenna-rf-portfolio/项目/车载透明天线.html)
 
 **项目时间：2026.04–至今**
+
+👉 [查看完整项目展示](https://aczeng.github.io/antenna-rf-portfolio/项目/车载透明天线.html)
 
 基于透明导电膜开展汽车车窗集成多端口天线设计，面向广播接收、蜂窝通信、无线连接及车联网等多制式应用。
 
@@ -138,8 +147,6 @@
 
 **当前进展：** 已完成多频带结构设计及仿真验证，目前进一步开展端口互耦及高隔离解耦优化。
 
-> 项目图示将陆续补充：整体结构、多端口S参数及代表频点表面电流。
-
 ---
 
 ## 工程与测试经验
@@ -158,17 +165,11 @@
 
 ---
 
-## 项目展示网页
+## 完整项目作品集
 
-本仓库同时维护 [项目作品集网页](https://aczeng.github.io/antenna-rf-portfolio/)。
+GitHub仓库用于快速展示项目经历；完整的项目结构、仿真结果、实物及测试图片将在 GitHub Pages 中持续更新。
 
-网页版本将逐步补充项目结构图、仿真结果、测试照片及现场工程图片。
-
-当前网申可直接使用 [项目经历链接](https://github.com/aczeng/antenna-rf-portfolio#projects)：
-
-```text
-https://github.com/aczeng/antenna-rf-portfolio#projects
-```
+👉 [进入完整天线与射频项目作品集](https://aczeng.github.io/antenna-rf-portfolio/)
 
 ---
 
@@ -200,28 +201,4 @@ https://github.com/aczeng/antenna-rf-portfolio#projects
 
 ---
 
-## 网站维护说明
-
-- 网站入口：`index.html`
-- 项目页面：`项目/`
-- 图片目录：`资源/图片/`
-
-修改完成后：
-
-```text
-修改文件
-→ Commit changes
-→ GitHub Pages自动更新
-```
-
-GitHub Pages发布方式：
-
-```text
-Settings
-→ Pages
-→ Deploy from a branch
-→ main
-→ / (root)
-```
-
-完整目录结构、图片替换方法及路径说明见 [网站维护说明](维护说明.md)。
+网站部署、图片替换及路径说明见 [维护说明.md](维护说明.md)。
