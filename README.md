@@ -1,4 +1,4 @@
-# 王慧增｜Antenna & RF Portfolio
+# 王慧增｜天线与射频项目作品集
 
 上海大学电子信息硕士｜2027届
 
@@ -8,7 +8,7 @@ https://aczeng.github.io/antenna-rf-portfolio/
 
 <a id="projects"></a>
 
-## Project Links
+## 项目直达链接
 
 ### 01 欧姆区FET超宽带有源接收天线
 
@@ -26,15 +26,19 @@ https://aczeng.github.io/antenna-rf-portfolio/#microwave-wpt
 
 https://aczeng.github.io/antenna-rf-portfolio/#vehicle-antenna
 
-## Technical Focus
+## 简历下载
 
-Antenna Design · RF Front-End · Electromagnetics · RF Testing
+[下载王慧增简历（PDF）](资源/简历/王慧增简历.pdf)
 
-## Tools
+## 技术方向
+
+天线设计 · 射频前端 · 电磁场 · 射频测试
+
+## 常用工具
 
 HFSS · ADS · CST · VNA · MATLAB · Origin
 
-## About
+## 仓库说明
 
 本仓库用于维护个人天线与射频项目作品集网页。
 
